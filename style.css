@@ -1,0 +1,75 @@
+/* ---------------------Media Queries----------------------- */
+@media (max-width: 992px) {  
+
+}
+
+@media (max-width: 786px) { 
+
+}
+
+@media (max-width: 576px) {  
+
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+Small (sm) devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+Medium devices (md) (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+Large (lg) devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+Extra (xl) large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width
+*/
+
+/*-----------Nav Bar------------------------*/
+.navbar {
+    background-color: #fd9b2c;
+ }
+
+ /*---------------Log in------------------------*/
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #FFBF22;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  background-color: #fd9b2c;
+}
+
+/* Add padding to containers */
+.container {
+  margin-top: 200px;*/
+  background-color: #ffffff;
+  /*margin: 0 auto 0 auto;  */
+}
+
+/* Add Card*/
+.card {
+	margin-left: 0.5rem;
+	width: 50rem auto;
+}
+

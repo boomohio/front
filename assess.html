@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assessment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="assess.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <h3> Assessment for JCSSE2020 </h3>
+    <br>
+
+
+</div>
+
+<div class="container">
+
+    <h5> Part I Personal Data</h5>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="gender"><b>Gender</b></label>
+        </div>
+        <div class="col">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Male</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Female</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <label for="carreer"><b>Carreer</b></label>
+        </div>
+        <div class="col">
+            <!-- <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                    <label class="form-check-label" for="exampleRadios1"> Student </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2"> Teacher </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3"> Teacher </label>
+            </div> -->
+
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1"> Student </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2"> Teacher </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3"> Staff</label>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <h5> Part II Question</h5>
+    <small id="level" class="form-text text-muted">
+        Level 5 = Most,
+        Level 4 = more,
+        Level 3 = Moderate,
+        Level 2 = A few,
+        Level 1 = A little
+    </small>
+
+    <table class="table table-bordered">
+        <!-- <thead> -->
+        <tr class="head">
+            <td rowspan="2" scope="col" width="65%"><b>List</b></td>
+            <td colspan="5" scope="col" width="35%"><b>Level</b></td>
+        </tr>
+        <tr class="level">
+            <td><b>
+                <center>5</center>
+            </b></td>
+            <td><b>
+                <center>4</center>
+            </b></td>
+            <td><b>
+                <center>3</center>
+            </b></td>
+            <td><b>
+                <center>2</center>
+            </b></td>
+            <td><b>
+                <center>1</center>
+            </b></td>
+        </tr>
+
+        <!-- Part 1 -->
+        <tr class="top">
+            <td colspan="6"><b> 1. Place </b></td>
+        </tr>
+        <tr>
+            <td> 1. Width</td>
+            <td><center><input type="radio" name="b1" value="5"></center></td>
+            <td><center><input type="radio" name="b1" value="4"></center></td>
+            <td><center><input type="radio" name="b1" value="3"></center></td>
+            <td><center><input type="radio" name="b1" value="2"></center></td>
+            <td><center><input type="radio" name="b1" value="1"></center></td>
+        </tr>
+
+        <tr>
+            <td> 2. Width</td>
+            <td><center><input type="radio" name="b2" value="5"></center></td>
+            <td><center><input type="radio" name="b2" value="4"></center></td>
+            <td><center><input type="radio" name="b2" value="3"></center></td>
+            <td><center><input type="radio" name="b2" value="2"></center></td>
+            <td><center><input type="radio" name="b2" value="1"></center></td>
+        </tr>
+
+
+        <!-- Part 2 -->
+        <tr class="top">
+            <td colspan="6"><b> 2. Wind </b></td>
+        </tr>
+        <tr>
+            <td> 1. Width</td>
+            <td><center><input type="radio" name="b3" value="5"></center></td>
+            <td><center><input type="radio" name="b3" value="4"></center></td>
+            <td><center><input type="radio" name="b3" value="3"></center></td>
+            <td><center><input type="radio" name="b3" value="2"></center></td>
+            <td><center><input type="radio" name="b3" value="1"></center></td>
+        </tr>
+
+        <tr>
+            <td> 2. Width</td>
+            <td><center><input type="radio" name="b4" value="5"></center></td>
+            <td><center><input type="radio" name="b4" value="4"></center></td>
+            <td><center><input type="radio" name="b4" value="3"></center></td>
+            <td><center><input type="radio" name="b4" value="2"></center></td>
+            <td><center><input type="radio" name="b4" value="1"></center></td>
+        </tr>
+
+
+
+        <!-- </thead>
+        <tbody>
+
+        </tbody> -->
+    </table>
+    <div>
+        <label for="suggestion">Suggestion</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <br>
+    <button type="button" class="btn btn-success">Send</button>
+
+
+</div>
+</body>
+</html>

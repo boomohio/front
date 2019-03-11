@@ -1,0 +1,40 @@
+/* ---------------------Media Queries----------------------- */
+@media (max-width: 992px) {  
+
+}
+
+@media (max-width: 768px) { 
+
+}
+
+@media (max-width: 576px) {  
+
+}
+
+
+.container-fluid {
+    background-color: #229954;
+    height: 20%;
+    width: 100%;
+}
+
+.container-fluid h3 {
+    color: #ffffff;
+    margin-left: 40px;
+    padding-top: 50px;
+    
+}
+
+.table .head {
+    text-align: center;
+}
+
+.table .top {
+    background-color: #e0d7d7;
+}
+
+button {
+    background-color: #229954 !important;
+    margin-bottom: 15px !important;
+    
+}

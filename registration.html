@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="../resource/jquery/jquery-3.3.1.min.js"></script>
+     <script src="../controller/registrationController.js"></script>
+</head>
+<body>
+<div class="container">
+    <br>
+    <h4><center>JCSSE 2020</center></h4>
+    <p><center>20<sup>th</sup> Joint Conference on Computer Science and Software Engineering</center></p>
+
+
+    <!--------------------------------------------------------Participant---------------------------------------------------------->
+    <hr>
+    <h5>Participant Information</h5>
+    <hr>
+    <form>
+
+        <!-- Title -->
+        <div class="form-group row">
+            <label for="title" class="col-sm-1 col-form-label">Title</label>
+            <div class="col-sm-2">
+                <select id="title" class="form-control">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms</option>
+                    <option>Professor</option>
+                    <option>Assistant Professor</option>
+                    <option>Associate Professor</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First name" required>
+                </div>
+                <div class="col">
+                    <label for="middleName">Middle name</label>
+                    <input type="text" class="form-control" id="middlename" placeholder="Middle name">
+                </div>
+                <div class="col">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                </div>
+            </div>
+        </div>
+
+        <!-- Email & Telephone -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">example@hotmail.com</small>
+                </div>
+                <div class="col">
+                    <label for="telephone">Telephone</label>
+                    <input type="text" class="form-control" id="telephone" placeholder="+66-123456789">
+                    <small id="tele" class="form-text text-muted">Country code-Number e.g. +66-123456789</small>
+                </div>
+                <div class="col">
+                    <label for="identitycard">Identity Card</label>
+                    <input type="text" class="form-control" id="identitycard" placeholder="">
+                    <small id="identity" class="form-text text-muted">identity card</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- UserName & Password -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="col">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="col">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+                </div>
+            </div>
+        </div>
+
+        <!-- Organization/University -->
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label class="nameOrganize">Name Of Organization</label>
+                    <input type="text" id="nameorganize" class="form-control">
+                    <small id="organize" class="form-text text-muted">Organization or University</small>
+                </div>
+                <div class="col">
+                    <label class="nameDept">Name Of Dept/Section</label>
+                    <input type="text" id="namedept" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label class="address">Address</label>
+            <textarea class="form-control" id="address" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label class="address">Nationality</label>
+            <input type="text" class="form-control" id="nationality" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="address">Membership Number</label>
+            <input type="text" class="form-control" id="member" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="gift">Gift</label>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="gift1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Shirt
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="gift2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Flashdrive
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Presenter -->
+        <label class="prsenter">Are you a presenter?</label>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="presenter" id="presenteryes" value="yes">
+                    <label class="form-check-label" for="exampleRadios1">
+                        Presenter
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="presenter" id="presenterno" value="no">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Not
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    <!--------------------------------------------------------Participant End---------------------------------------------------------->
+
+
+    <!--------------------------------------------------------Registration---------------------------------------------------------->
+    <hr>
+    <h5>Registration</h5>
+    <hr>
+
+    <!-- Registration fee -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label >Registration Fee</label>
+                <label>(paper #1)</label>
+            </div>
+            <div class="col">
+                <span id="foo"></span>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Additional Page</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="page1" type="text" class="form-control" placeholder="No Section">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Paper ID</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="paper1" class="form-control" onchange="Choose(id)">
+                            <option selected>please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Category</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="category1" type="text" class="form-control" placeholder="Category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Paper 1 -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label >Additional Paper#1</label>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Additional Page</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="page2" type="text" class="form-control" placeholder="No Section">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Paper ID</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="paper2" class="form-control" onchange="Choose(id)">
+                            <option selected >please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Category</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="category2" type="text" class="form-control" placeholder="Category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Paper 2 -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label >Additional Paper#2</label>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Additional Page</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input  id="page3" type="text" class="form-control" placeholder="No Section">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Paper ID</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="paper3" class="form-control" onchange="Choose(id)">
+                            <option selected >please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Category</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="category3" type="text" class="form-control" placeholder="Category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Paper 3 -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label >Additional Paper#3</label>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Additional Page</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="page4" type="text" class="form-control" placeholder="No Section">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Paper ID</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="paper4" class="form-control" onchange="Choose(id)">
+                            <option selected >please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Category</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="category4" type="text" class="form-control" placeholder="Category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Paper 4 -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label >Additional Paper#4</label>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Additional Page</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="page5" type="text" class="form-control" placeholder="No Section">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Paper ID</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="paper5" class="form-control" onchange="Choose(id)">
+                            <option selected >please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label >Category</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="category5" type="text" class="form-control" placeholder="Category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Conferences Proceeding -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="conference">Extra Conferences Proceeding</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="conference" value="ecp1" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Reception -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="reception">Welcome Reception</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="reception" value="reception" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banquet -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="banquet">Banquet</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="banquet" value="banquet" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra Banquet Ticket -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="banquetExtra">Extra Banquet Ticket</label>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="banquetExtra" value="banquetExtra" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------Registration End---------------------------------------------------------->
+
+    <!-- Button -->
+    <div class="row">
+        <div class="col-sm-1">
+            <button type="submit" onclick="registration()" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-1">
+            <button type="submit" class="btn btn-danger">Cancel</button>
+        </div>
+    </div>
+    <br>
+</div>
+</body>
+</html>
